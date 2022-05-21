@@ -10,6 +10,7 @@ on:
 jobs:
   qodana:
     runs-on: ubuntu-latest
+    bootstrap: pip install -r requirements.txt
     steps:
       - uses: actions/checkout@v3
         with:
